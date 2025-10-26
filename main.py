@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import time
 
+# sesuaikan jumlah data yang ingin di scraping, contoh max_reviews=50
 def scrape_google_maps_reviews(url, max_reviews=50, lang='id'):
     options = Options()
     options.add_argument("--headless=new")  # biar jalan di background
@@ -141,9 +142,10 @@ if __name__ == "__main__":
 
     semua_ulasan = []
     for url in urls:
+        # sesuaikan jumlah data yang ingin di scraping, contoh max_reviews=50
         hasil = scrape_google_maps_reviews(url, max_reviews=50, lang='id')
         semua_ulasan.extend(hasil)
 
     df = pd.DataFrame(semua_ulasan)
-    df.to_csv("data_museum4.csv", index=False, encoding="utf-8")
-    print(f"\n[INFO] Total {len(df)} ulasan berhasil disimpan ke 'data_museum4.csv'")
+    df.to_csv("hasil_scraping.csv", index=False, encoding="utf-8")
+    print(f"\n[INFO] Total {len(df)} ulasan berhasil disimpan ke 'hasil_scraping.csv'")
