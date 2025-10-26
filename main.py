@@ -131,14 +131,12 @@ def scrape_google_maps_reviews(url, max_reviews=50, lang='id'):
 # =============== MAIN PROGRAM ===============
 if __name__ == "__main__":
     urls = [
-        "https://www.google.com/maps/place/Museum+Sonobudoyo+Unit+I/@-7.8002929,110.3558644,15z/data=!4m10!1m2!2m1!1smuseum+di+yogyakarta!3m6!1s0x2e7a578f83070a4f:0x9d10431ac43ec5ee!8m2!3d-7.802257!4d110.3639441!15sChRtdXNldW0gZGkgeW9neWFrYXJ0YZIBCmFydF9tdXNldW2qAUgQASoKIgZtdXNldW0oADIeEAEiGpOK9T_aCzU_-hEeoQ-wVlulzFcVFMxduoJ5MhgQAiIUbXVzZXVtIGRpIHlvZ3lha2FydGHgAQA!16s%2Fg%2F11h1v81d_?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        # masukkan url didalam string
+        "",
 
-        # kamu bisa tambahkan URL lain di sini:
-        "https://www.google.com/maps/place/Vredeburg+Fort+Museum/@-7.8002929,110.3558644,15z/data=!4m10!1m2!2m1!1smuseum+di+yogyakarta!3m6!1s0x2e7a5788c0b3eecf:0xb9611ce0232a9ff8!8m2!3d-7.800293!4d110.3661642!15sChRtdXNldW0gZGkgeW9neWFrYXJ0YZIBDmhpc3RvcnlfbXVzZXVtqgFIEAEqCiIGbXVzZXVtKAAyHhABIhqTivU_2gs1P_oRHqEPsFZbpcxXFRTMXbqCeTIYEAIiFG11c2V1bSBkaSB5b2d5YWthcnRh4AEA!16zL20vMGJyZmY4?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+        # bisa juga tambahkan URL lain di sini:
+        "",
 
-        "https://www.google.com/maps/place/Monumen+Yogya+Kembali/@-7.7495904,110.3505524,15z/data=!4m10!1m2!2m1!1smuseum+yogyakarta!3m6!1s0x2e7a58f99013c989:0x2a96db25b8ff4333!8m2!3d-7.7495904!4d110.3696068!15sChFtdXNldW0geW9neWFrYXJ0YZIBDmhpc3RvcnlfbXVzZXVtqgFFEAEqCiIGbXVzZXVtKCYyHhABIhqTis0cXmnBX-QZNwwhxtnIR-OEp7aqTEZxwzIVEAIiEW11c2V1bSB5b2d5YWthcnRh4AEA!16s%2Fm%2F0gfgg53?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D",
-        
-        "https://www.google.com/maps/place/Affandi+Museum/@-7.782713,110.3773426,15z/data=!4m10!1m2!2m1!1smuseum+yogyakarta!3m6!1s0x2e7a59c49f681dbd:0x3e9d55bf26695d4a!8m2!3d-7.782713!4d110.396397!15sChFtdXNldW0geW9neWFrYXJ0YZIBCmFydF9tdXNldW2qAUUQASoKIgZtdXNldW0oJjIeEAEiGpOKzRxeacFf5Bk3DCHG2chH44SntqpMRnHDMhUQAiIRbXVzZXVtIHlvZ3lha2FydGHgAQA!16s%2Fm%2F05b4x2q?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"
     ]
 
     semua_ulasan = []
